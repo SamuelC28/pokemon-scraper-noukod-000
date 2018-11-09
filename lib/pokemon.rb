@@ -1,9 +1,8 @@
 class Pokemon
   @@all = []
-  attr_accessor :id, :name, :type, :db
+  attr_accessor :name, :type, :db
 
-  def initialize(id,name, type, db)
-    @id = id
+  def initialize(name, type, db)
     @name = name
     @type = type
     @db = db
@@ -13,8 +12,8 @@ class Pokemon
   def self.all
     @@all
   end
-  def self.save(id,name, type, db)
-    database_connection.execute("INSERT INTO pokemon (id,name, type, db) VALUES (?, ?, ?)",id, name, type, db)
+  def self.save(name, type, db)
+    database_connection.execute("INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)",name, type, db)
   end
 end
 
