@@ -1,2 +1,2 @@
-class Pokemon(name, type, db)
+class Pokemon
 end
