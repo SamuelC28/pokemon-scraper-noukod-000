@@ -19,4 +19,17 @@ class Pokemon
     new_pokemon.hp = pokemon[0][3]
   return new_pokemon
  end
+
+def bonus
+   database_connection = SQLite3::Database.new('db/pets.db')
+ 
+    Cat.new("Maru", "scottish fold", 3)
+    Cat.new("Hana", "tortoiseshell", 1)
+   
+    Cat.all.each do |cat|
+      Cat.save(cat.name, cat.breed, cat.age, database_connection)
+    end
+end
+ 
+
 end
