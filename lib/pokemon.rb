@@ -20,16 +20,16 @@ class Pokemon
   return new_pokemon
  end
 
-def bonus
+def self.bonus(pokemon)
    database_connection = SQLite3::Database.new('db/pets.db')
- 
-    Cat.new("Maru", "scottish fold", 3)
-    Cat.new("Hana", "tortoiseshell", 1)
-   
-    Cat.all.each do |cat|
-      Cat.save(cat.name, cat.breed, cat.age, database_connection)
+
+    # Cat.new("Maru", "scottish fold", 3)
+    # Cat.new("Hana", "tortoiseshell", 1)
+
+    Pokemon.all.each do |pokemon|
+      Pokemon.save(pokemon.name, pokemon.breed, pokemon.age, db)
     end
 end
- 
+
 
 end
