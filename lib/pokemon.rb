@@ -1,16 +1,16 @@
 class Pokemon
   @@all = []
-  attr_accessor :name, :type, :database_connection, :id, :hp
+  attr_accessor :name, :type, :db, :id, :hp
 
   def initialize(keyword)
 
   end
 
-  def self.save(name, type, database_connection)
+  def self.save(name, type, db)
     database_connection.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)",name, type)
   end
 
-def self.find(num, database_connection)
+def self.find(num, db)
 #   pokemon = db.execute("SELECT * FROM pokemon WHERE id=?", [num])
 #     new_pokemon = self.new(pokemon)
 #     new_pokemon.id = pokemon[0][0]
