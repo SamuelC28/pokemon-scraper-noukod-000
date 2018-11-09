@@ -9,7 +9,7 @@ class Pokemon
     @@all << self
   end
 
-  def self.all
+  def self.all(name, type, db)
     @@all
   end
   def self.save(name, type, db, database_connection)
