@@ -16,13 +16,3 @@ class Pokemon
     database_connection.execute("INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)",name, type, db)
   end
 end
-
-
-
-
-
-
-
-
-
-  
