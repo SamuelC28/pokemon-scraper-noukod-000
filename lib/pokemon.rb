@@ -19,11 +19,11 @@ class Pokemon
 end
 
 
- 
 
- 
 
- 
 
- 
+
+
+
+
   
