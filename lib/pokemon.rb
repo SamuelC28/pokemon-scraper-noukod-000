@@ -3,10 +3,7 @@ class Pokemon
   attr_accessor :name, :type, :db, :id, :hp
 
   def initialize(keyword)
-    # @name = name
-    # @type = type
-    # @db = db
-    # @@all << self
+
   end
 
   # def self.all(name, type, db)
