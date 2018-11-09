@@ -2,11 +2,11 @@ class Pokemon
   @@all = []
   attr_accessor :name, :type, :db, :id, :hp
 
-  def initialize(name, type, db)
-    @name = name
-    @type = type
-    @db = db
-    @@all << self
+  def initialize(keyword)
+    # @name = name
+    # @type = type
+    # @db = db
+    # @@all << self
   end
 
   # def self.all(name, type, db)
